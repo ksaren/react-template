@@ -6,9 +6,17 @@ import ReactDOM from 'react-dom';
 import './assets/stylesheets/style.css'
 
 /****** ADD YOUR CODE AFTER THIS LINE ******/
+function firstName(name){
+  return name.first;
+}
+
+const name = {
+  first: 'Kaisa',
+  last: 'Saren'
+};
 
 const Hello = () => (
-  <div>Hello World!</div>
+  <div>Hello {firstName(name)}!</div>
 );
 
 class App extends Component {
